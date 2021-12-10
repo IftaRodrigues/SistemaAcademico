@@ -23,7 +23,7 @@ public class AlunoDao {
         em.getTransaction().commit();
     }
 
-    public Aluno aluno(long id) {
+    public Aluno findById(long id) {
         return em.find(Aluno.class, id);
     }
 

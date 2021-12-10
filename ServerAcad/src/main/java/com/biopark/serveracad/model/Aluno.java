@@ -18,6 +18,7 @@ public class Aluno implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+    private String cpf;
     private Date dataNascimento;
 
     public Long getId() {
@@ -43,6 +44,12 @@ public class Aluno implements Serializable{
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-    
-    
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }    
 }
