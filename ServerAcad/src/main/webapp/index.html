@@ -3,8 +3,34 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <link rel="stylesheet" href="https://stackedit.io/style.css" />
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body class="stackedit">
+        <div class="stackedit__html"><h1 id="sistemaacademico-rest">SistemaAcademico REST</h1>
+            <p>Desenvolvimento Web Services REST em Java utilizando JAX-RS com Hibernate JPA e CDI no NetBeans</p>
+            <h2 id="testando-o-serviço-criado">Testando o serviço criado</h2>
+            <p>Pode ser usado o <a href="https://hoppscotch.io/">Hoppscotch</a> para testar os métodos da API</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>Método</strong></th>
+                        <th><strong>Verbo HTTP</strong></th>
+                        <th><strong>Comando</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inserir Aluno</td>
+                        <td>POST</td>
+                        <td>{“nome”: “João”, “cpf”: “99999999999”, “dataNascimento”: “02/12/2011”} <a href="http://localhost:8080/ServerAcad/api/aluno">http://localhost:8080/ServerAcad/api/aluno</a></td>
+                    </tr>
+                    <tr>
+                        <td>Buscar Aluno</td>
+                        <td>POST</td>
+                        <td><a href="http://localhost:8080/ServerAcad/api/aluno/1">http://localhost:8080/ServerAcad/api/aluno/1</a></td>
+                    </tr>
+                </tbody>
+            </table></div>
     </body>
 </html>

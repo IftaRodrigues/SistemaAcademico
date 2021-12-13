@@ -1,6 +1,5 @@
 package com.biopark.serveracad.dao;
 
-import com.biopark.serveracad.model.Aluno;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Disposes;
@@ -34,5 +33,5 @@ public class JpaUtil {
     public void close(@Disposes EntityManager manager) {
         manager.clear();
     }
-    
+
 }
