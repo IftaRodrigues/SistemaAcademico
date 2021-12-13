@@ -5,7 +5,7 @@ Desenvolvimento Web Services REST em Java utilizando JAX-RS com Hibernate JPA e 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
   1. JDK 1.8 
   2. IDE NetBeans 12
-  3. Servidor de aplicação GlassFish 5 (a ser mostrado como instalar)
+  3. Servidor de aplicação GlassFish 5
   4. MySQL
 
 ##  2. Configurando o Back End (servidor)
