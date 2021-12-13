@@ -30,4 +30,4 @@ Pode ser usado o [Hoppscotch](https://hoppscotch.io/) para testar os métodos da
 | **Método** |  **Verbo HTTP** | **Comando**  |
 |--|--|--|
 | Inserir Aluno | POST | {"nome": "João", "cpf": "99999999999", "dataNascimento": "02/12/2011"} http://localhost:8080/ServerAcad/api/aluno  |
-| Buscar Aluno | POST | http://localhost:8080/ServerAcad/api/aluno/1  |
+| Buscar Aluno | GET | http://localhost:8080/ServerAcad/api/aluno/1  |
