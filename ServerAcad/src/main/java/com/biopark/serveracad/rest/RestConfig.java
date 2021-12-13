@@ -1,5 +1,6 @@
-package com.biopark.serveracad.config;
+package com.biopark.serveracad.rest;
 
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
@@ -7,7 +8,7 @@ import javax.ws.rs.core.Application;
  * @author ifta
  */
 
-@javax.ws.rs.ApplicationPath("api")
+@ApplicationPath("/api")
 public class RestConfig extends Application{
     
 }

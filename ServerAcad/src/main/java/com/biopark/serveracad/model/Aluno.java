@@ -1,7 +1,6 @@
 package com.biopark.serveracad.model;
 
 import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +18,7 @@ public class Aluno implements Serializable{
     private Long id;
     private String nome;
     private String cpf;
-    private Date dataNascimento;
+    private String dataNascimento;
 
     public Long getId() {
         return id;
@@ -36,15 +35,15 @@ public class Aluno implements Serializable{
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    public Date getDataNascimento() {
+    
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-
+    
     public String getCpf() {
         return cpf;
     }

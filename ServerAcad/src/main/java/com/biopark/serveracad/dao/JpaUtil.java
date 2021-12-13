@@ -1,5 +1,6 @@
 package com.biopark.serveracad.dao;
 
+import com.biopark.serveracad.model.Aluno;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Disposes;
@@ -14,23 +15,23 @@ import javax.persistence.Persistence;
  */
 @Dependent
 public class JpaUtil {
-    
+
     @ApplicationScoped
     @Produces
-    public EntityManagerFactory factory(){
+    public EntityManagerFactory factory() {
         return Persistence.createEntityManagerFactory("conexao");
     }
-    
+
     @Produces
-    public EntityManager manager(EntityManagerFactory factory){
+    public EntityManager manager(EntityManagerFactory factory) {
         return factory.createEntityManager();
     }
-    
-    public void close(@Disposes EntityManagerFactory factory){
+
+    public void close(@Disposes EntityManagerFactory factory) {
         factory.close();
     }
-    
-    public void close(@Disposes EntityManager manager){
+
+    public void close(@Disposes EntityManager manager) {
         manager.clear();
     }
     
